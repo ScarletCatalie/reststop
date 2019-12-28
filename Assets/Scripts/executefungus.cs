@@ -5,10 +5,11 @@ using Fungus;
 public class executefungus :  MonoBehaviour
 {
     public Flowchart flowchart;
+    public string BlockName;
 
     private void OnTriggerEnter(Collider Player)
     {
-            flowchart.ExecuteBlock("BeatOne");
+            flowchart.ExecuteBlock(BlockName);
     }
 
 }
